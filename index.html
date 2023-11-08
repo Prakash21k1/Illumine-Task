@@ -4,82 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Illumine Task</title>
-    
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
+
     <div class="header">
           
         <form action="">
-            <input type="submit" value="SAVE" />
+            <div class="heading">
+                <h4>Header</h4>
+                
+                <input type="submit" value="SAVE" id="sub"/>
 
-            <select name="yard" id="yard" ">
-            <option selected="selected" disabled>Yard *</option>
-            <option>HK</option>
-            <option>AU</option>
-            <option>OT</option>
-            </select>
-
-            <select name="Customer Name " id="name">
-                <option selected="selected">Customer Name *</option>
-                <option>JACK</option>
-                <option>SAMSON</option>
-                <option>JOHN</option>
-            </select>
-
-            <input id="unit_no" type="number" placeholder="Unit number" readonly/>
-
-            <input id="usage" type="text" placeholder="Usage"/>
-
-            <input id="type" type="text" placeholder="Type"/>
-
-            <input id="size" type="number" placeholder="Size" readonly/>
-
-            <input id="est_date" type="date" placeholder="Estimate Date"  min="" />
-
-            <select name="Customer Name " id="est_type">
-                <option selected="selected" disabled>Estimate Type *</option>
-            </select>
-
-            <select name="Damage Type" id="damage_type">
-                <option selected="selected" disabled>Damage Type *</option>
-            </select>
-
-            <input id="uom" type="number" placeholder="UOM" readonly/>
-
-            <select name="bill_to" id="bill_to">
-                <option selected="selected" disabled>Bill To *</option>
-                <option>JACK</option>
-                <option>SAMSON</option>
-                <option>JOHN</option>
-            </select>
-
-            <select name="lesses" id="lessee">
-                <option selected="selected" disabled>Lessee *</option>
-                <option>MAERSK</option>
-                <option>CMACGM</option>
-                <option>MSI</option>
-            </select>
-
-            <select name="agent" id="agent">
-                <option selected="selected" disabled>Agent</option>
-                <option>Agent 1</option>
-                <option>Agent 2</option>
-                <option>Agent 3</option>
-            </select>
-
-            <input id="amount" type="number" placeholder="Amount " readonly/>
-
-            <input id="size" type="number" placeholder="Size" readonly/>
-
-            <select name="payment" id="payment">
-                <option selected="selected" disabled>Payment Type *</option>
-                <option>Cash</option>
-                <option>Online</option>
-            </select>
-
-            <input id="active" type="checkbox" placeholder="Active">Active</input>
-
-            <input id="type" type="text" placeholder="Amount"/>
+            </div>
+            
+            <div class="content">
+                <select name="yard" id="yard" ">
+                    <option selected="selected" disabled>Yard *</option>
+                    <option>HK</option>
+                    <option>AU</option>
+                    <option>OT</option>
+                    </select>
+        
+                    <select name="Customer Name " id="name">
+                        <option selected="selected">Customer Name *</option>
+                        <option>JACK</option>
+                        <option>SAMSON</option>
+                        <option>JOHN</option>
+                    </select>
+                    
+                    <input id="unit_no" type="number" placeholder="Unit number *" />
+        
+                    <input id="usage" type="text" placeholder="Usage *"/>
+        
+                    <input id="type" type="text" placeholder="Type"/>
+        
+                    <input id="size" type="number" placeholder="Size" />
+        
+                    <input id="est_date" type="text" placeholder="Estimate Date"  min="" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+        
+                    <select name="Customer Name " id="est_type">
+                        <option selected="selected" disabled>Estimate Type *</option>
+                    </select>
+        
+                    <select name="Damage Type" id="damage_type">
+                        <option selected="selected" disabled>Damage Type *</option>
+                    </select>
+        
+                    <input id="uom" type="number" placeholder="UOM *" />
+        
+                    <select name="bill_to" id="bill_to">
+                        <option selected="selected" disabled>Bill To *</option>
+                        <option>JACK</option>
+                        <option>SAMSON</option>
+                        <option>JOHN</option>
+                    </select>
+        
+                    <select name="lesses" id="lessee">
+                        <option selected="selected" disabled>Lessee *</option>
+                        <option>MAERSK</option>
+                        <option>CMACGM</option>
+                        <option>MSI</option>
+                    </select>
+        
+                    <select name="agent" id="agent">
+                        <option selected="selected" disabled>Agent *</option>
+                        <option>Agent 1</option>
+                        <option>Agent 2</option>
+                        <option>Agent 3</option>
+                    </select>
+        
+                    <input id="amount" type="number" placeholder="Amount * "/>
+        
+                    
+        
+                    <select name="payment" id="payment">
+                        <option selected="selected" disabled>Payment Type *</option>
+                        <option>Cash</option>
+                        <option>Online</option>
+                    </select>
+                    <div class="form-check form-switch" id="active">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
+                      </div>
+                    <!-- <input id="active" type="checkbox" placeholder="Active">Active</input> -->
+        
+                    <input id="remark" type="text" placeholder="Remarks *"/>
+            </div>
             
             
         </form>

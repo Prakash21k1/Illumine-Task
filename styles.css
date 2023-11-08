@@ -1,0 +1,180 @@
+*{
+    margin:auto;
+    padding: 0;
+    flex-wrap: wrap;
+    
+    
+}
+
+.heading{
+    
+    height: 10vh;
+    background-color: rgb(104, 102, 102);
+    width:100% ;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+input[type=submit]{
+    background-color: greenyellow;
+    border: 5px;
+    border-radius: 22px;
+    color: white;
+    padding: 5px 10px;
+    size: 15px;
+    float: right;
+    margin-right: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+    
+}
+
+h4{
+    
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 25px;
+    color: white;
+   
+}
+form{
+    display: inline-block;
+    
+}
+
+#yard{
+    margin-left:18px;
+    width: 50vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#name{
+    margin-left: 18px;
+    width: 50vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#unit_no{
+    margin-left: 18px;
+    width: 50vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+}
+
+#usage{
+    margin-left: 18px;
+    width: 50vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#type{
+    margin-left: 18px;
+    width: 23vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#size{
+    margin-left: 19px;
+    width: 24vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#est_date{
+    margin-left: 18px;
+    width: 50vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#est_type{
+    margin-left: 18px;
+    width: 50vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#damage_type{
+    margin-left: 18px;
+    width: 50vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#uom{
+    margin-left: 18px;
+    width: 50vh;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#bill_to{
+    margin-left: 20px;
+    width: 50vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#lessee{
+    margin-left: 20px;
+    width: 50vh;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#agent{
+    margin-left: 18px;
+    width: 50vh;
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#amount{
+    margin-left: 20px;
+    width: 50vh;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#payment{
+    margin-left: 20px;
+    width: 50vh;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#active{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#remark{
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
