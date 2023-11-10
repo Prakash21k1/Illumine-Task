@@ -165,7 +165,7 @@ form{
     margin-top: 15px;
 }
 
-#active{
+#activebutton{
     display: inline-block;
     margin-top: 15px;
     margin-left: 25px;
@@ -177,4 +177,22 @@ form{
     margin-left: 20px;
     padding: 10px 5px;
     border-radius: 10px;
+}
+
+#errorHeader {
+    text-align: center;
+    color: red;
+}
+
+
+
+#toast {
+display: none;
+position: fixed;
+top: 85%;
+left: 75%;
+padding: 15px;
+background-color: #333;
+color: white;
+border-radius: 15px;
 }

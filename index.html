@@ -8,33 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
+    <header id="errorHeader"></header>
 
     <div class="header">
           
-        <form action="">
+        <form action="" onsubmit="save(event)">
             <div class="heading">
                 <h4>Header</h4>
                 
-                <input type="submit" value="SAVE" id="sub"/>
+                <input type="submit" value="SAVE" id="sub" onclick="validateCheckbox()" onclick="save(event)"/>
 
             </div>
             
             <div class="content">
-                <select name="yard" id="yard" ">
+                <select name="yard" id="yard" " required onchange="check()">
                     <option selected="selected" disabled>Yard *</option>
                     <option>HK</option>
                     <option>AU</option>
                     <option>OT</option>
                     </select>
         
-                    <select name="Customer Name " id="name">
+                    <select name="Customer Name " id="name" required onchange="check()">
                         <option selected="selected">Customer Name *</option>
                         <option>JACK</option>
                         <option>SAMSON</option>
                         <option>JOHN</option>
                     </select>
                     
-                    <input id="unit_no" type="number" placeholder="Unit number *" />
+                    <input id="unit_no" type="number" placeholder="Unit number *" required/>
         
                     <input id="usage" type="text" placeholder="Usage *"/>
         
@@ -44,59 +45,64 @@
         
                     <input id="est_date" type="text" placeholder="Estimate Date"  min="" onfocus="(this.type='date')" onblur="(this.type='text')"/>
         
-                    <select name="Customer Name " id="est_type">
+                    <select name="est_type " id="est_type" >
                         <option selected="selected" disabled>Estimate Type *</option>
                     </select>
         
-                    <select name="Damage Type" id="damage_type">
+                    <select name="Damage Type" id="damage_type" >
                         <option selected="selected" disabled>Damage Type *</option>
                     </select>
         
-                    <input id="uom" type="number" placeholder="UOM *" />
+                    <input id="uom" type="number" placeholder="UOM *"/>
         
-                    <select name="bill_to" id="bill_to">
+                    <select name="bill_to" id="bill_to" required>
                         <option selected="selected" disabled>Bill To *</option>
                         <option>JACK</option>
                         <option>SAMSON</option>
                         <option>JOHN</option>
                     </select>
         
-                    <select name="lesses" id="lessee">
+                    <select name="lesses" id="lessee" required>
                         <option selected="selected" disabled>Lessee *</option>
                         <option>MAERSK</option>
                         <option>CMACGM</option>
                         <option>MSI</option>
                     </select>
         
-                    <select name="agent" id="agent">
+                    <select name="agent" id="agent" >
                         <option selected="selected" disabled>Agent *</option>
+                        <option value="Not Applicable" hidden>Not Applicable </option>
                         <option>Agent 1</option>
                         <option>Agent 2</option>
                         <option>Agent 3</option>
                     </select>
         
-                    <input id="amount" type="number" placeholder="Amount * "/>
+                    <input id="amount" type="number" placeholder="Amount *" oninput="amountcheck()" onchange="checkAmountLength()" >
         
                     
         
-                    <select name="payment" id="payment">
+                    <select name="payment" id="payment" disabled>
                         <option selected="selected" disabled>Payment Type *</option>
                         <option>Cash</option>
                         <option>Online</option>
                     </select>
-                    <div class="form-check form-switch" id="active">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+
+                    
+                    <div class="form-check form-switch" id="activebutton">
+                        <input class="form-check-input" type="checkbox" role="switch" id="active" required>
                         <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
                       </div>
-                    <!-- <input id="active" type="checkbox" placeholder="Active">Active</input> -->
         
-                    <input id="remark" type="text" placeholder="Remarks *"/>
+                    <input id="remark" type="text" placeholder="Remarks *" required/>
             </div>
+
             
             
         </form>
     </div>
-    <div class="body"></div>
+    <div id="toast"></div>
+
+    
     <script src="index.js"></script>
   </body>
 </html>
