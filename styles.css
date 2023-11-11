@@ -2,8 +2,6 @@
     margin:auto;
     padding: 0;
     flex-wrap: wrap;
-    
-    
 }
 
 .heading{
@@ -28,7 +26,6 @@ input[type=submit]{
     cursor: pointer;
     margin-top: 20px;
     color: black;
-    
 }
 
 h4{
@@ -41,7 +38,6 @@ h4{
 }
 form{
     display: inline-block;
-    
 }
 
 #yard{
@@ -66,7 +62,6 @@ form{
     padding: 10px 5px;
     margin-top: 15px;
     border-radius: 10px;
-    
 }
 
 #usage{
@@ -184,13 +179,11 @@ form{
     color: red;
 }
 
-
-
 #toast {
 display: none;
 position: fixed;
 top: 85%;
-left: 75%;
+left: 85%;
 padding: 15px;
 background-color: #333;
 color: white;
